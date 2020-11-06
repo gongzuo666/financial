@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 4001 == 4002\n +  where 4001 = int('4001')",
+      "children" : [ {
+        "name" : "账套添加",
+        "uid" : "74ccf9d22f90d639",
+        "parentUid" : "401945ac56f950ce4fc3f3d4ee49d42e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1604555730077,
+          "stop" : 1604555730096,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"packageName\": \"\", \"createMouth\": 202011, \"loginAcc\": \"xizang\", \"loginPwd\": \"123456as\", \"confirmPwd\": \"123456as\"}'", "'{\"code\": 4002}'" ]
+      } ],
+      "uid" : "401945ac56f950ce4fc3f3d4ee49d42e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

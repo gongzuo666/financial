@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '4001' == '4000'\n  - 4000\n  ?    ^\n  + 4001\n  ?    ^",
+      "children" : [ {
+        "name" : "\"用户名不存在，输入密码\"",
+        "uid" : "285aff22ae7bda18",
+        "parentUid" : "eb3ab7ccaaabf8fb4de41012489315a4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1604630070321,
+          "stop" : 1604630070350,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"code\": \"4000\", \"msg\": \"没有查到账户信息\"}'", "'{\"userType\": \"FINANCE\", \"username\": \"aaaaa\", \"password\": \"e10adc3949ba59abbe56e057f20f883e\", \"ledgerId\": 194}'", "'\"用户名不存在，输入密码\"'" ]
+      } ],
+      "uid" : "eb3ab7ccaaabf8fb4de41012489315a4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

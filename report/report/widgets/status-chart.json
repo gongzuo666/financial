@@ -1,0 +1,21 @@
+[ {
+  "uid" : "934d88e167f7410",
+  "name" : "账套添加",
+  "time" : {
+    "start" : 1604555730034,
+    "stop" : 1604555730064,
+    "duration" : 30
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74ccf9d22f90d639",
+  "name" : "账套添加",
+  "time" : {
+    "start" : 1604555730077,
+    "stop" : 1604555730096,
+    "duration" : 19
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

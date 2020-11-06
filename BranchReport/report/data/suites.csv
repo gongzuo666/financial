@@ -1,0 +1,10 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Nov 06 10:34:30 CST 2020","Fri Nov 06 10:34:30 CST 2020","51","","test_login","TestLesson","","","""用户名、密码输入正确""","
+        用例描述：登录操作接口
+        "
+"failed","Fri Nov 06 10:34:30 CST 2020","Fri Nov 06 10:34:30 CST 2020","29","","test_login","TestLesson","","","""用户名不存在，输入密码""","
+        用例描述：登录操作接口
+        "
+"passed","Fri Nov 06 10:34:30 CST 2020","Fri Nov 06 10:34:30 CST 2020","23","","test_login","TestLesson","","","""用户名为空，输入密码""","
+        用例描述：登录操作接口
+        "

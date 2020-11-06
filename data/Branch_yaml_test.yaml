@@ -1,0 +1,60 @@
+--- #账套添加   (代表分组)
+-  # test1
+ url: /qccw/ledger/insert
+ method: post
+ detail: 用户名、密码输入正确
+ data:
+   userType: FINANCE
+   username: shouji
+   password: e10adc3949ba59abbe56e057f20f883e  # md5加密后的123456
+   ledgerId: 194
+ check:
+   code: '0000'
+   msg: SUCCESSFUL
+
+-  # test2
+ url: /qccw/ledger/insert
+ method: post
+ detail: 用户名为空，输入密码
+ data:
+   userType: FINANCE
+   username: ""
+   password: e10adc3949ba59abbe56e057f20f883e
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+-  # test3
+ url: /qccw/ledger/insert
+ method: post
+ detail: 用户名不存在，输入密码
+ data:
+   userType: FINANCE
+   username: aaaaa
+   password: e10adc3949ba59abbe56e057f20f883e
+   ledgerId: 194
+ check:
+   code: '4000'
+   msg: 没有查到账户信息
+
+-  # test4
+ url: /qccw/ledger/insert
+ method: post
+ detail: 用户名不存在，输入密码
+ data:
+   userType: FINANCE
+   username: aaaaa
+   password: e10adc3949ba59abbe56e057f20f883e
+   ledgerId: 194
+ check:
+   code: '4000'
+   msg: 没有查到账户信息
+
+
+
+
+
+
+
+

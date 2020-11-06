@@ -1,0 +1,39 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "账套管理",
+    "children" : [ {
+      "name" : "新增账套",
+      "children" : [ {
+        "name" : "账套添加",
+        "uid" : "934d88e167f7410",
+        "parentUid" : "b622000075b148488e1d4a8723f36ea3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604555730034,
+          "stop" : 1604555730064,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"packageName\": \"西藏1公司\", \"createMouth\": 202011, \"loginAcc\": \"xizang\", \"loginPwd\": \"123456as\", \"confirmPwd\": \"123456as\"}'", "'{\"code\": 0}'" ]
+      }, {
+        "name" : "账套添加",
+        "uid" : "74ccf9d22f90d639",
+        "parentUid" : "b622000075b148488e1d4a8723f36ea3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1604555730077,
+          "stop" : 1604555730096,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"packageName\": \"\", \"createMouth\": 202011, \"loginAcc\": \"xizang\", \"loginPwd\": \"123456as\", \"confirmPwd\": \"123456as\"}'", "'{\"code\": 4002}'" ]
+      } ],
+      "uid" : "b622000075b148488e1d4a8723f36ea3"
+    } ],
+    "uid" : "aba61bc229972de3b61b3ce5044dd05d"
+  } ]
+}

@@ -1,0 +1,52 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_login",
+    "children" : [ {
+      "name" : "TestLesson",
+      "children" : [ {
+        "name" : "\"用户名、密码输入正确\"",
+        "uid" : "cbf238693ff3db7a",
+        "parentUid" : "7240ca27b4774f7d8637bdfa9bb555d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604630070219,
+          "stop" : 1604630070270,
+          "duration" : 51
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"code\": \"0000\", \"msg\": \"SUCCESSFUL\"}'", "'{\"userType\": \"FINANCE\", \"username\": \"shouji\", \"password\": \"e10adc3949ba59abbe56e057f20f883e\", \"ledgerId\": 194}'", "'\"用户名、密码输入正确\"'" ]
+      }, {
+        "name" : "\"用户名为空，输入密码\"",
+        "uid" : "292f6d0349adaade",
+        "parentUid" : "7240ca27b4774f7d8637bdfa9bb555d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1604630070284,
+          "stop" : 1604630070307,
+          "duration" : 23
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"code\": \"4001\", \"msg\": \"校验参数不通过\"}'", "'{\"userType\": \"FINANCE\", \"username\": \"\", \"password\": \"e10adc3949ba59abbe56e057f20f883e\", \"ledgerId\": 194}'", "'\"用户名为空，输入密码\"'" ]
+      }, {
+        "name" : "\"用户名不存在，输入密码\"",
+        "uid" : "285aff22ae7bda18",
+        "parentUid" : "7240ca27b4774f7d8637bdfa9bb555d4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1604630070321,
+          "stop" : 1604630070350,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'{\"code\": \"4000\", \"msg\": \"没有查到账户信息\"}'", "'{\"userType\": \"FINANCE\", \"username\": \"aaaaa\", \"password\": \"e10adc3949ba59abbe56e057f20f883e\", \"ledgerId\": 194}'", "'\"用户名不存在，输入密码\"'" ]
+      } ],
+      "uid" : "7240ca27b4774f7d8637bdfa9bb555d4"
+    } ],
+    "uid" : "7db21133bf389fa43eef71e3fe0b0e68"
+  } ]
+}

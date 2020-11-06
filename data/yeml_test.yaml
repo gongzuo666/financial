@@ -1,0 +1,27 @@
+--- #账套添加   (代表分组)
+-  # test1
+ url: /qccw/ledger/insert
+ method: post
+ detail: 正常添加
+ data:
+   packageName: 西藏1公司
+   createMouth: 202011
+   loginAcc: xizang
+   loginPwd: 123456as
+   confirmPwd: 123456as
+ check:
+   code: 0000
+
+-  # test2
+ url: /qccw/ledger/insert
+ method: post
+ detail: 不传公司名称
+ data:
+   packageName: ""
+   createMouth: 202011
+   loginAcc: xizang
+   loginPwd: 123456as
+   confirmPwd: 123456as
+ check:
+   code: 4002
+
