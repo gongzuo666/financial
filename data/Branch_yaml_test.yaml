@@ -131,8 +131,8 @@
  detail: 都不填写
  data:
  check:
-   code: '4001'
-   msg: 校验参数不通过
+   code: '5000'
+   msg: 服务器繁忙, 请稍后再试
 
 
 
