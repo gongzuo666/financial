@@ -125,7 +125,14 @@
    code: '4001'
    msg: 校验参数不通过
 
-
+-  # test11
+ url: /qccw/ledger/insert
+ method: post
+ detail: 都不填写
+ data:
+ check:
+   code: '4001'
+   msg: 校验参数不通过
 
 
 
