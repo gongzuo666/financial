@@ -2,7 +2,7 @@
 -  # test1
  url: /qccw/ledger/insert
  method: post
- detail: 用户名、密码输入正确
+ detail: 用户类型、用户名、密码、账套 id正确填写
  data:
    userType: FINANCE
    username: shouji
@@ -15,7 +15,7 @@
 -  # test2
  url: /qccw/ledger/insert
  method: post
- detail: 用户名为空，输入密码
+ detail: 不填写用户名，其他字段正确填写
  data:
    userType: FINANCE
    username: ""
@@ -28,28 +28,104 @@
 -  # test3
  url: /qccw/ledger/insert
  method: post
- detail: 用户名不存在，输入密码
+ detail: 填写不存在的用户名，其他字段正确填写
  data:
    userType: FINANCE
    username: aaaaa
    password: e10adc3949ba59abbe56e057f20f883e
    ledgerId: 194
  check:
-   code: '4000'
+   code: '4001'
    msg: 没有查到账户信息
 
 -  # test4
  url: /qccw/ledger/insert
  method: post
- detail: 用户名不存在，输入密码
+ detail: 填写的用户名与ledgerId不对应，其他字段正确填写
  data:
    userType: FINANCE
-   username: aaaaa
+   username: admins
    password: e10adc3949ba59abbe56e057f20f883e
    ledgerId: 194
  check:
-   code: '4000'
+   code: '4001'
    msg: 没有查到账户信息
+
+-  # test5
+ url: /qccw/ledger/insert
+ method: post
+ detail: 不填写密码，其他字段正确填写
+ data:
+   userType: FINANCE
+   username: admins
+   password: ""
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+-  # test6
+ url: /qccw/ledger/insert
+ method: post
+ detail: 填写未加密过的密码，其他字段正确填写
+ data:
+   userType: FINANCE
+   username: admins
+   password: 123456
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 密码输入错误
+
+-  # test7
+ url: /qccw/ledger/insert
+ method: post
+ detail: 缺少userType字段，其他字段正确填写
+ data:
+   username: admins
+   password: e10adc3949ba59abbe56e057f20f883e
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+-  # test8
+ url: /qccw/ledger/insert
+ method: post
+ detail: 缺少username字段，其他字段正确填写
+ data:
+   userType: FINANCE
+   password: e10adc3949ba59abbe56e057f20f883e
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+-  # test9
+ url: /qccw/ledger/insert
+ method: post
+ detail: 缺少password字段，其他字段正确填写
+ data:
+   userType: FINANCE
+   username: admins
+   ledgerId: 194
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+-  # test10
+ url: /qccw/ledger/insert
+ method: post
+ detail: 缺少ledgerId字段，其他字段正确填写
+ data:
+   userType: FINANCE
+   username: admins
+   password: e10adc3949ba59abbe56e057f20f883e
+ check:
+   code: '4001'
+   msg: 校验参数不通过
+
+
 
 
 
